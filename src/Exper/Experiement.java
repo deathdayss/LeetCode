@@ -6,34 +6,30 @@ import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
+import jdk.jfr.Experimental;
 
-public class Experiement extends Application {
+import java.util.ArrayList;
 
-    @Override
-    public void start(Stage primaryStage) {
-        primaryStage.setTitle("Key Press");
-        StackPane root = new StackPane();
-        Scene scene = new Scene(root, 300 ,300);
-        primaryStage.setScene(scene);
-        Text hi = new Text("asf");
-        root.getChildren().add(hi);
-        scene.setOnKeyTyped(event -> {
-            if (event.getCharacter().equals("q"))
-                Platform.exit();
-            else
-                hi.setText("Fuck you" + event.getCharacter());
-        });
-        primaryStage.show();
+interface as {
+    void killit();
+}
+
+class Experiement {
+    static int a = 23;
+    void it() {
+        int i = 2;
     }
-    static public void sd (Integer g) {
-        g = new Integer(14);
+    int ui() {
+        a = 2324;
+        return a;
     }
     public static void main(String[] args) {
         // launch(args);
-        Experiement ex = new Experiement();
-        System.out.println(ex instanceof Experiement);
-        System.out.println(Math.pow(2, 0.5));
-        System.out.println(Math.ceil(2.000));
-        System.out.println(0 % 2);
+        Experiement as = new Experiement();
+        System.out.println(as.a);
+        System.out.println("a");
+        ArrayList<Integer> a = new ArrayList<>();
+        a.forEach(b ->
+                System.out.println(b + 1));
     }
 }
