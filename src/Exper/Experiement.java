@@ -11,25 +11,31 @@ import jdk.jfr.Experimental;
 import java.util.ArrayList;
 
 interface as {
+    int sd = 2;
     void killit();
 }
-
-class Experiement {
+class it {
+    int other() {
+        return 5;
+    }
+    int ui() {
+        return 43;
+    }
+}
+class Experiement extends it{
     static int a = 23;
     void it() {
         int i = 2;
     }
+    @Override
     int ui() {
-        a = 2324;
-        return a;
+        return 234;
     }
     public static void main(String[] args) {
         // launch(args);
+        it sth = new Experiement();
+        System.out.println(sth.other());
         Experiement as = new Experiement();
-        System.out.println(as.a);
-        System.out.println("a");
         ArrayList<Integer> a = new ArrayList<>();
-        a.forEach(b ->
-                System.out.println(b + 1));
     }
 }

@@ -11,7 +11,7 @@ class ListNode {
 
 
 public class RemoveZeroSumConsecutiveNodesfromLinkedList {
-    public ListNode removeZeroSumSublists(ListNode head) {
+    /*public ListNode removeZeroSumSublists(ListNode head) {
         ArrayList<Integer> object = new ArrayList<>();
         while (head.next != null) {
             object.add(head.val);
@@ -37,5 +37,5 @@ public class RemoveZeroSumConsecutiveNodesfromLinkedList {
                 }
             }
         }
-    }
+    }*/
 }
