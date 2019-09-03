@@ -22,20 +22,11 @@ class it {
         return 43;
     }
 }
-class Experiement extends it{
-    static int a = 23;
-    void it() {
-        int i = 2;
-    }
-    @Override
-    int ui() {
-        return 234;
-    }
+class Experiement {
+    static int[] m = {1,23,4};
     public static void main(String[] args) {
-        // launch(args);
-        it sth = new Experiement();
-        System.out.println(sth.other());
-        Experiement as = new Experiement();
-        ArrayList<Integer> a = new ArrayList<>();
+        int[] h = m.clone();
+        h[0] = 2;
+        System.out.println(m[0]);
     }
 }
