@@ -27,6 +27,10 @@ class Experiement {
     public static void main(String[] args) {
         int[] h = m.clone();
         h[0] = 2;
-        System.out.println(m[0]);
+        ArrayList<String> m = new ArrayList<>();
+        String k = "asd";
+        m.add(k);
+        String p = "asd";
+        System.out.println(m.contains(p));
     }
 }
