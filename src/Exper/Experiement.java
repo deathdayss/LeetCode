@@ -24,6 +24,9 @@ class it {
 }
 class Experiement {
     static int[] m = {1,23,4};
+    public static void add(int[] j) {
+        j[0] += 1;
+    }
     public static void main(String[] args) {
         int[] h = m.clone();
         h[0] = 2;
@@ -33,5 +36,9 @@ class Experiement {
         String p = "asd";
         System.out.println(m.contains(p));
         System.out.println("ASD".toLowerCase());
+        int[] m1 = new int[1];
+        m1[0] = 1;
+        add(m1);
+        System.out.println(m1[0]);
     }
 }
