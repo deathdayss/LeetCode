@@ -2,7 +2,6 @@ public class MaskingPersonalInformation {
     public String maskPII(String S) {
         if (S.contains("@")) {
             String target = "";
-            String helper = new String(S);
             S = S.toLowerCase();
             for (int i = 0; i < S.length(); i++) {
                 if (i == 0) {
