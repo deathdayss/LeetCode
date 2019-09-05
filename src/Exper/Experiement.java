@@ -32,5 +32,6 @@ class Experiement {
         m.add(k);
         String p = "asd";
         System.out.println(m.contains(p));
+        System.out.println("ASD".toLowerCase());
     }
 }
