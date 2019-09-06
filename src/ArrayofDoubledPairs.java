@@ -4,9 +4,9 @@ import java.util.Collections;
 
 public class ArrayofDoubledPairs {
     public boolean canReorderDoubled(int[] A) {
-        ArrayList<Integer> pInteger = new ArrayList<>();
-        ArrayList<Integer> ninteger = new ArrayList<>();
-        for (int i : A) {
+        /*ArrayList<Integer> pInteger = new ArrayList<>();
+        ArrayList<Integer> ninteger = new ArrayList<>();*/
+        /*for (int i : A) {
             if (i >= 0) {
                 if (pInteger.size() == 0) {
                     pInteger.add(i);
@@ -54,8 +54,13 @@ public class ArrayofDoubledPairs {
                     }
                 }
             }
+        }*/
+        ArrayList<Integer> myInteger = new ArrayList<>();
+        for (int m : A) {
+            myInteger.add(m);
         }
-        System.out.println(ninteger);
+        Collections.sort(myInteger);
+        /*System.out.println(ninteger);
         ninteger.addAll(pInteger);
         System.out.println(ninteger);
         for (int i = 0; i < ninteger.size(); i++) {
@@ -71,6 +76,32 @@ public class ArrayofDoubledPairs {
             if (isValid) {
                 ninteger.remove(twice);
                 ninteger.remove(i);
+                i--;
+            } else {
+                return false;
+            }
+        }*/
+        for (int i = 0; i < myInteger.size(); i++) {
+            boolean isValid = false;
+            int twice = 0;
+            for (int w = i + 1; w < myInteger.size(); w++) {
+                if (myInteger.get(i) >= 0) {
+                    if (myInteger.get(w) == 2 * myInteger.get(i)) {
+                        isValid = true;
+                        twice = w;
+                        break;
+                    }
+                } else {
+                    if (myInteger.get(w) * 2 == myInteger.get(i)) {
+                        isValid = true;
+                        twice = w;
+                        break;
+                    }
+                }
+            }
+            if (isValid) {
+                myInteger.remove(twice);
+                myInteger.remove(i);
                 i--;
             } else {
                 return false;
