@@ -101,8 +101,6 @@ public class ArrayofDoubledPairs {
             }
             if (isValid) {
                 myInteger.remove(twice);
-                myInteger.remove(i);
-                i--;
             } else {
                 return false;
             }
