@@ -15,6 +15,10 @@ interface as {
     void killit();
 }
 class it {
+    int num = 0;
+    public void printIt() {
+        System.out.println(num);
+    }
     int other() {
         return 5;
     }
@@ -22,8 +26,14 @@ class it {
         return 43;
     }
 }
-class Experiement {
+class Experiement extends it {
     static int[] m = {1,23,4};
+    int num = 23;
+    @Override
+    public void printIt(){
+        super.printIt();
+        System.out.println(super.num);
+    }
     public static void add(int[] j) {
         j[0] += 1;
     }
@@ -34,11 +44,10 @@ class Experiement {
         String k = "asd";
         m.add(k);
         String p = "asd";
-        System.out.println(m.contains(p));
-        System.out.println("ASD".toLowerCase());
         int[] m1 = new int[1];
         m1[0] = 1;
         add(m1);
-        System.out.println(m1[0]);
+        Experiement asd = new Experiement();
+        asd.printIt();
     }
 }
