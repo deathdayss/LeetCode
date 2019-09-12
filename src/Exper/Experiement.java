@@ -36,18 +36,14 @@ class Experiement extends it {
         super.printIt();
         System.out.println(super.num);
     }
-    public static void add(int[] j) {
-        j[0] += 1;
+    public static int[] add(int[] j) {
+        j[0] = 1;
+        return j;
     }
     public static void main(String[] args) {
-        ArrayList<String> ms = new ArrayList<>();
-        ms.add("asfw");
-        HashMap<Integer, ArrayList<String>> myHash = new HashMap<>();
-        myHash.put(1, ms);
-        ArrayList<String> fs = myHash.get(1);
-        fs = new ArrayList<>();
-        fs.add("asd");
-        myHash.put(1,fs);
-        System.out.println(myHash.get(1).get(0));
+        int[] fs = new int[1];
+        int[] ks = add(fs);
+        ks[0] = 3;
+        System.out.println(fs[0]);
     }
 }
