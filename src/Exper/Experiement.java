@@ -9,6 +9,8 @@ import javafx.scene.text.Text;
 import jdk.jfr.Experimental;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 
 interface as {
     int sd = 2;
@@ -38,16 +40,14 @@ class Experiement extends it {
         j[0] += 1;
     }
     public static void main(String[] args) {
-        int[] h = m.clone();
-        h[0] = 2;
-        ArrayList<String> m = new ArrayList<>();
-        String k = "asd";
-        m.add(k);
-        String p = "asd";
-        int[] m1 = new int[1];
-        m1[0] = 1;
-        add(m1);
-        Experiement asd = new Experiement();
-        asd.printIt();
+        ArrayList<String> ms = new ArrayList<>();
+        ms.add("asfw");
+        HashMap<Integer, ArrayList<String>> myHash = new HashMap<>();
+        myHash.put(1, ms);
+        ArrayList<String> fs = myHash.get(1);
+        fs = new ArrayList<>();
+        fs.add("asd");
+        myHash.put(1,fs);
+        System.out.println(myHash.get(1).get(0));
     }
 }
