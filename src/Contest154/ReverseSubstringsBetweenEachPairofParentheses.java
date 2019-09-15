@@ -40,5 +40,11 @@ public class ReverseSubstringsBetweenEachPairofParentheses {
     public static void main(String[] args) {
         ReverseSubstringsBetweenEachPairofParentheses ms = new ReverseSubstringsBetweenEachPairofParentheses();
         System.out.println(ms.reverseParentheses("a(bcdefghijkl(mno)p)q"));
+        boolean[] k = new boolean[1];
+        ArrayList<String> test = new ArrayList<>();
+        test.add("your");
+        test.add("mine");
+        test.add(1, "is");
+        System.out.println(test);
     }
 }
