@@ -71,7 +71,13 @@ class Experiement extends it {
         }
         return m;
     }
+    static void addOne(int[] f) {
+        f[0]++;
+    }
     public static void main(String[] args) {
-        System.out.println(sortIt("h000a021d232i532e621g220j701b410c100f400"));
+        int[] a = new int[1];
+        addOne(a);
+        System.out.println(a[0]);
+        System.out.println(sortIt("a000b132c430h013f511g620j112e701i201d400"));
     }
 }
