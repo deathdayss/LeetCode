@@ -1,3 +1,5 @@
+package Easy;
+
 public class SpiralMatrixIII {
     int index = 1;
     public int[][] spiralMatrixIII(int R, int C, int r0, int c0) {

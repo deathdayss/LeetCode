@@ -1,3 +1,5 @@
+package Easy;
+
 public class RobotReturnToOrigin {
     public boolean judgeCircle(String moves) {
         int a = 0;

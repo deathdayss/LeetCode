@@ -1,3 +1,5 @@
+package Easy;
+
 public class FlippingAnImage {
     public int[][] flipAndInvertImage(int[][] A) {
         int t = A.length;

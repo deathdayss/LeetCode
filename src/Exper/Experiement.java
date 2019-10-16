@@ -75,9 +75,8 @@ class Experiement extends it {
         f[0]++;
     }
     public static void main(String[] args) {
-        int[] a = new int[1];
-        addOne(a);
-        System.out.println(a[0]);
-        System.out.println(sortIt("a000b132c430h013f511g620j112e701i201d400"));
+        ArrayList<String> m = new ArrayList<>();
+        ArrayList<String> k = m;
+        System.out.println(k == m);
     }
 }

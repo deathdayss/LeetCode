@@ -1,3 +1,5 @@
+package Easy;
+
 public class MaskingPersonalInformation {
     public String maskPII(String S) {
         if (S.contains("@")) {

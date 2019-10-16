@@ -1,3 +1,5 @@
+package Easy;
+
 import java.util.ArrayList;
 
 public class FindWordsThatCanBeFormedbyCharacters { // not finished
@@ -34,9 +36,4 @@ public class FindWordsThatCanBeFormedbyCharacters { // not finished
             }
             return m;
         }
-
-    /*public static void main(String[] args) {
-        FindWordsThatCanBeFormedbyCharacters a = new FindWordsThatCanBeFormedbyCharacters();
-        a.countCharacters(new String[] {"hello","world","leetcode"}, "welldonehoneyr");
-    } */
 }

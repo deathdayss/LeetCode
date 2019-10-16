@@ -1,3 +1,5 @@
+package Easy;
+
 public class RemoveOutermostParentheses {
     public static String removeOuterParentheses(String S) {
         int length = S.length();
