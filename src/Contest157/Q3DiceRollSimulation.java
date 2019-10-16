@@ -5,6 +5,7 @@ public class Q3DiceRollSimulation {
         if (n == 0) {
             return result;
         }
+        return result;
     }
     public int dieSimulator(int n, int[] rollMax) {
         int result = 6;
