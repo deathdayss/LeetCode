@@ -3,9 +3,11 @@ package Medium;
 public class Nth_Digit {
     public int findNthDigit(int n) {
         int k = 1;
-        while (n > 9 * Math.pow(10, k - 1) * k) {
-            n -= 9 * Math.pow(10, k - 1) * k;
+        int num = 9;
+        while (n > num * k) {
+            n -= num * k;
             k++;
+            num = num * 10;
         }
         System.out.println("k is " + k);
         System.out.println("n is " + n);
@@ -16,6 +18,6 @@ public class Nth_Digit {
 
     public static void main(String[] args) {
         Nth_Digit a = new Nth_Digit();
-        System.out.println(a.findNthDigit(190));
+        System.out.println(a.findNthDigit(197));
     }
 }
