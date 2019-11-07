@@ -12,6 +12,8 @@ public class Jump_Game {
                     } else if (canJump(i, nums)) {
                         return true;
                     }
+                } else if (i + j > index) {
+                    break;
                 }
             }
         }
@@ -20,9 +22,13 @@ public class Jump_Game {
 
 
     public boolean canJump(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return false;
+        }
         if (nums.length <= 1) {
             return true;
         }
+
         return canJump(nums.length - 1, nums);
     }
 
