@@ -4,20 +4,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+interface Func{
+    void operation(int x, int y);
+
+}
 class Experiement{
-
-    public int[][][] findIt(int[][] tuple, int start) {
-        for (int i = start; i < tuple.length; i++) {
-            return null;
-        }
-        return null;
+    int a = 0;
+    void changeA() {
+        Func a = (int x, int y) -> System.out.println(x + y);
     }
-    public int[][][] findCircle(int[][] tuple) {
 
-        return findIt(tuple, 0);
-    }
 
     public static void main(String[] args) {
-        System.out.println(111&11);
+        Experiement a = new Experiement();
+        var inc = x -> x + 1;
     }
 }
