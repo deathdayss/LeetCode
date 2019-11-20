@@ -18,6 +18,6 @@ class Experiement{
     }
 
     public static void main(String[] args) {
-        System.out.println(111&11);
+        System.out.println(new char[] {'1'}.equals(new char[] {'1'}));
     }
 }
