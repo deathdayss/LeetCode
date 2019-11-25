@@ -8,7 +8,7 @@ public class Subsets {
 
     void changeIt(int start, int[] nums) {
         for (int i = start; i < nums.length; i++) {
-            
+
         }
     }
 
