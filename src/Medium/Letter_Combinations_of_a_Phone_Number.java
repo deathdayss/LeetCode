@@ -31,9 +31,7 @@ public class Letter_Combinations_of_a_Phone_Number {
             add = 3;
         }
         for (int i = k; i <= k + add; i++) {
-            String p = acc;
-            p += (char)i;
-            helper(p, index + 1, digits);
+            helper(acc + (char)i, index + 1, digits);
         }
     }
 
