@@ -34,8 +34,9 @@ public class Largest_Number {
                 target += equal.get(0);
                 nums[tarIndex] = -1;
             } else {
-                
+
             }
         }
+        return target;
     }
 }
