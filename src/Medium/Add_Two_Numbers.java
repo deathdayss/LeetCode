@@ -67,7 +67,7 @@ public class Add_Two_Numbers {
             if (addIt == 1) {
                 fst.next = plusOne(fst.next);
             }
-            snd.next = snd.next;
+            snd.next = fst.next;
         }
         return l1;
     }
