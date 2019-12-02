@@ -17,7 +17,12 @@ class Experiement{
         return findIt(tuple, 0);
     }
 
+    static void changeString (String a) {
+
+    }
     public static void main(String[] args) {
-        System.out.println(new char[] {'1'}.equals(new char[] {'1'}));
+        String k = "abb";
+        String c = "abb";
+        System.out.println(k == c);
     }
 }
