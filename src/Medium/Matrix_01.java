@@ -18,9 +18,6 @@ public class Matrix_01 {
                                 break;
                             }
                         }
-                        if (find0) {
-                            break;
-                        }
                     }
                     add++;
                 }
