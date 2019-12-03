@@ -4,6 +4,31 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+class ai {
+    void output1() {
+        System.out.println("asd");
+    }
+}
+
+class ml extends ai {
+    @Override
+    void output1() {
+        System.out.println("has been overrode");
+    }
+}
+
+class Sit extends ml {
+    @Override
+    void output1() {
+        System.out.println("The 2nd override");
+    }
+
+    void getIt() {
+        System.out.println("get it");
+    }
+}
+
+
 class Experiement{
 
     public int[][][] findIt(int[][] tuple, int start) {
@@ -23,6 +48,8 @@ class Experiement{
     public static void main(String[] args) {
         String k = "abb";
         String c = "abb";
-        System.out.println(k == c);
+
+        ai a = new Sit();
+        ((Sit)a).getIt();
     }
 }
