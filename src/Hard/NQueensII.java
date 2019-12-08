@@ -1,8 +1,5 @@
 package Hard;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class NQueensII {
     int result = 0;
     int length;
@@ -14,7 +11,7 @@ public class NQueensII {
             int iny = row - d;
             int dey = row + d;
             for (int i = 0; i < length; i++) {
-                if (iny >= 0 && iny < length && board[iny][i] || dey >= 0 && dey < length && board[dey][i] || board[i][d]) {
+                if (board[i][d] || iny >= 0 && iny < length && board[iny][i] || dey >= 0 && dey < length && board[dey][i]) {
                     isValid = false;
                     break;
                 }
