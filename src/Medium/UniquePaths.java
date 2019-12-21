@@ -1,5 +1,10 @@
 package Medium;
 
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+
 public class UniquePaths {
     int result;
     public int uniquePaths(int m, int n) {
@@ -21,7 +26,29 @@ public class UniquePaths {
     }
 
     public static void main(String[] args) {
-        UniquePaths a = new UniquePaths();
-        System.out.println(a.uniquePaths(19,13));
+        List<Integer> k = new LinkedList<>();
+        Random a = new Random();
+        int find = 0;
+        while (k.size() != 50) {
+            for (int i = 1; i <= 100; i++) {
+                find++;
+                if (k.size() == 50) {
+                    break;
+                }
+                if (!k.contains(i) && a.nextInt(2) == 1) {
+                    k.add(i);
+                }
+            }
+        }
+        Collections.sort(k);
+        System.out.println(k);
+        System.out.println(find);
+        System.out.println("separator");
+        String f = "asd";
+        List m = new LinkedList();
+        m.add(f);
+        m.add(f);
+        m.add(f);
+        System.out.println(m);
     }
 }
