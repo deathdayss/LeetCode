@@ -46,5 +46,5 @@ public class NQueens {
         board = new boolean[n][n];
         getIt(0);
         return result;
-    }
+    } // Test contributions
 }

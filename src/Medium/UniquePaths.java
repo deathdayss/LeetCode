@@ -26,8 +26,8 @@ public class UniquePaths {
     }
 
     public static void main(String[] args) {
-        List<Integer> k = new LinkedList<>();
         Random a = new Random();
+        List<Integer> k = new LinkedList<>();
         int find = 0;
         while (k.size() != 50) {
             for (int i = 1; i <= 100; i++) {
