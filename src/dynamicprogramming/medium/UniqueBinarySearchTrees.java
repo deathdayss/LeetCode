@@ -1,4 +1,4 @@
-package dynamicprogramming;
+package dynamicprogramming.medium;
 
 public class UniqueBinarySearchTrees {
     public int numTrees(int n) {
