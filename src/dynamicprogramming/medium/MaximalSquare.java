@@ -2,7 +2,7 @@ package dynamicprogramming.medium;
 
 public class MaximalSquare {
     // Naive solution:
-    // Time: O(n^4) Space: O(1)
+    // Time: O(n^3) Space: O(1)
 //    char[][] matrix;
 //    public int maximalSquare(char[][] matrix) {
 //        if (matrix.length == 0) return 0;
@@ -34,12 +34,38 @@ public class MaximalSquare {
 //        }
 //        return true;
 //    }
-    public int maximalSquare(char[][] matrix) {
 
-    }
+    // Time: O(n^3) Space: O(n^3)
+//    public int maximalSquare(char[][] matrix) {
+//        if (matrix.length == 0) return 0;
+//        int width = matrix.length;
+//        int length = matrix[0].length;
+//        int side = Math.min(width, length);
+//        int max = 0;
+//        boolean[][][] dp = new boolean[width][length][side];
+//        for (int l = 1; l <= side; l++) {
+//            for (int x = 0; x <= width - l; x++) {
+//                for (int y = 0; y <= length - l; y++) {
+//                    if (l == 1) {
+//                        if (matrix[x][y] == '1') {
+//                            dp[x][y][1 - 1] = true;
+//                            max = l;
+//                        }
+//                    } else {
+//                        if (dp[x][y][l - 2] && dp[x][y + 1][l - 2] && dp[x + 1][y][l - 2] && dp[x + 1][y + 1][l - 2]) {
+//                            dp[x][y][l - 1] = true;
+//                            max = l;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        return max * max;
+//    }
 
     public static void main(String[] args) {
         MaximalSquare a = new MaximalSquare();
-        System.out.println(a.maximalSquare(new char[][]{new char[] {'1','0','1','0','0'}, new char[]{'1','0','1','1','1'},new char[]{'1','1','1','1','1'},new char[] {'1','0','0','1','0'}}));
+//        System.out.println(a.maximalSquare(new char[][]{new char[] {'1','0','1','0','0'}, new char[]{'1','0','1','1','1'},new char[]{'1','1','1','1','1'},new char[] {'1','0','0','1','0'}}));
+        System.out.println(a.maximalSquare(new char[][]{new char[] {'1'}}));
     }
 }
