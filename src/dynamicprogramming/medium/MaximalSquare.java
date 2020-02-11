@@ -63,6 +63,24 @@ public class MaximalSquare {
 //        return max * max;
 //    }
 
+    // Time: O(n^2) Space: O(n^2)
+    public int maximalSquare(char[][] matrix) {
+        if (matrix == null || matrix.length == 0) return 0;
+        int goal = 0;
+        int width = matrix.length;
+        int length = matrix[0].length;
+        int[][] dp = new int[width + 1][length + 1];
+        for (int y = 1; y < width; y++) {
+            for (int x = 1; x < length; x++) {
+                if (matrix[y - 1][x - 1] == '1') {
+                    dp[y][x] = Math.min(dp[y - 1][x - 1], Math.min(dp[y - 1][x], dp[y][x - 1])) + 1;
+                    goal = Math.max(dp[y][x], goal);
+                }
+            }
+        }
+        return goal * goal;
+    }
+
     public static void main(String[] args) {
         MaximalSquare a = new MaximalSquare();
 //        System.out.println(a.maximalSquare(new char[][]{new char[] {'1','0','1','0','0'}, new char[]{'1','0','1','1','1'},new char[]{'1','1','1','1','1'},new char[] {'1','0','0','1','0'}}));
