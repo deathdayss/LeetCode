@@ -12,10 +12,11 @@ class TreeNode {
 
 public class UniqueBinarySearchTreesII {
     public List<TreeNode> generateTrees(int n) {
-        List<TreeNode>[] dp = new LinkedList[n];
-        dp[0] = null;
-        for (int i = 1; i <= n; i++) {
-            dp[i] =
-        }
+//        List<TreeNode>[] dp = new LinkedList[n];
+//        dp[0] = null;
+//        for (int i = 1; i <= n; i++) {
+//            dp[i] =
+//        }
+        return null;
     }
 }
