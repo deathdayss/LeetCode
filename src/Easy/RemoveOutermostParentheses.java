@@ -24,7 +24,7 @@ public class RemoveOutermostParentheses {
                 }
             }
         }
-        return  tar;
+        return tar;
     }
 
     public static void main(String[] args) {
